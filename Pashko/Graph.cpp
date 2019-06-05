@@ -24,7 +24,7 @@ Graph::Graph(int n, int minDist, int maxDist) {
 		}
 	}
 	std::ofstream fout;
-	fout.open(std::string(getenv("HOME"))+"\\Desktop\\graph.txt");
+	fout.open("D:\\graph.txt");
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			fout << edgesMatrix_[i][j] << (j==n-1?"\n":" ");
